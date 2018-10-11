@@ -4,7 +4,7 @@ jdk:
 install: true
 script:
 - cd java
-- gradle shadowjar
+- gradle :ice-adapter:shadowJar
 - mv ./java/ice-adapter/build/libs/ice-adapter-1.0-SNAPSHOT-all.jar ./faf-ice-adapter.jar
 deploy:
   provider: releases
