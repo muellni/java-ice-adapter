@@ -3,7 +3,7 @@ jdk:
 - oraclejdk8
 install: true
 script:
-- cd java
+- cd java/ice-adapter
 - gradle shadowjar
 - mv ./java/ice-adapter/build/libs/ice-adapter-1.0-SNAPSHOT-all.jar ./faf-ice-adapter.jar
 deploy:
